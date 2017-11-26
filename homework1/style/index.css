@@ -1,0 +1,42 @@
+h1{text-align: center;color: blue}
+#nav ul {
+    Width: 1000px;
+    height: 40px;
+    margin: 30px auto;
+    padding: 0;
+    list-style: none;
+    border-top: solid 5px rgba(101, 47, 226, 0.904);
+    border-bottom: solid 5px rgba(108, 44, 228, 0.904);
+    background: url(images/background.jpg)
+}
+
+#nav ul li {
+    width: 100px;
+    float: left;
+    text-align: center;
+    font: 16px/2.5 "microsoft yahei";
+}
+
+#nav ul li a {
+    color: #800080;
+    text-decoration: none;
+}
+
+#nav ul li a:hover {
+    display: block;
+    color: rgb(133, 65, 221);
+    background: rgb(18, 5, 129);
+}
+table,
+table tr th,
+table tr th {
+    border: 1px soild #ff0000
+}
+
+table {
+    width: 300px;
+    min-height: 25px;
+    line-height: 25px;
+    text-align: center;
+    border-collapse: collapse
+}

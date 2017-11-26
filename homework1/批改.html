@@ -1,0 +1,153 @@
+
+<html>
+
+<head>
+<meta charset="UTF-8">
+    <!-- 这个title里的align属性，又是你创造的哦~ -->
+    <!-- 详细见：https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/title  -->
+    <!-- 什么叫全局属性？见https://developer.mozilla.org/zh-CN/docs/Web/HTML/Global_attributes -->
+    <title>javascript语言精粹</title>
+    <link rel="stylesheet" href="./style/index.css">
+</head>
+
+<body>
+    <!-- 下面这个align属性也不能用，下面的链接有句英文说：The align attribute is obsolete; don't use it. -->
+    <!-- 见：https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements -->
+
+    <h1>
+        <!-- font标签不要用 -->
+        <!-- 点击 https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element -->
+        <!-- 上面链接打开后，页面左侧栏往下看，有没有看见  垃圾桶的图标？ -->
+        <!-- 英文说：This is an obsolete API and is no longer guaranteed to work. -->
+        javascript语言精粹
+    </h1>
+
+    <!-- 下面这个style标签，用在这里是没有问题哦，但我给你发的作业中已经建议是用下面这种形式 -->
+    <!--    <link rel="stylesheet" href=""> -->
+    <!-- 上面这个一般建议放在head标签里  我已经放了 -->
+    <!-- 这里有个知识点，补充一下，见：https://www.psd1403.com/css%E7%9A%84%E4%B8%89%E7%A7%8D%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F/ -->
+    <div id="nav">
+        <ul>
+            <li>
+                <!-- href属性放的一般是https://www.baidu.com  这种网址，当然也可以放文件链接，但这种数字是不可取的 -->
+                <a href="https://baike.baidu.com/item/JavaScript%E8%AF%AD%E8%A8%80%E7%B2%BE%E7%B2%B9/4500619?fr=aladdin">书籍介绍</a>
+            </li>
+            <li>
+                <a href="https://baike.baidu.com/item/JavaScript%E8%AF%AD%E8%A8%80%E7%B2%BE%E7%B2%B9/4500619?fr=aladdin">作者介绍</a>
+            </li>
+            <li>
+                <a href="https://baike.baidu.com/item/JavaScript%E8%AF%AD%E8%A8%80%E7%B2%BE%E7%B2%B9/4500619?fr=aladdin">书籍展示</a>
+            </li>
+            <li>
+                <a href="https://baike.baidu.com/item/JavaScript%E8%AF%AD%E8%A8%80%E7%B2%BE%E7%B2%B9/4500619?fr=aladdin">书籍动态</a>
+            </li>
+            <li>
+                <a href="https://baike.baidu.com/item/JavaScript%E8%AF%AD%E8%A8%80%E7%B2%BE%E7%B2%B9/4500619?fr=aladdin">购买地址</a>
+            </li>
+            <li>
+                <a href="https://baike.baidu.com/item/JavaScript%E8%AF%AD%E8%A8%80%E7%B2%BE%E7%B2%B9/4500619?fr=aladdin">关于公司</a>
+            </li>
+            <li>
+                <a href="https://baike.baidu.com/item/JavaScript%E8%AF%AD%E8%A8%80%E7%B2%BE%E7%B2%B9/4500619?fr=aladdin">浏览足迹</a>
+            </li>
+            <li>
+                <a href="https://baike.baidu.com/item/JavaScript%E8%AF%AD%E8%A8%80%E7%B2%BE%E7%B2%B9/4500619?fr=aladdin">联系我们</a>
+            </li>
+            <li>
+                <a href="https://baike.baidu.com/item/JavaScript%E8%AF%AD%E8%A8%80%E7%B2%BE%E7%B2%B9/4500619?fr=aladdin">收藏本站</a>
+            </li>
+        </ul>
+    </div>
+    <h2>javascript语言精粹 书籍介绍</h2>
+    <address>文章作者：sora</address>
+    <p>这里是书籍介绍.......................................................</p>
+    <img src="image/语言精粹.jpg">
+    <p>这里是作者介绍........................................................</p>
+    <h3>作者的其他作品</h3>
+    <ol type="1" start="1">
+        <li>abc</li>
+        <li>abse</li>
+        <li>tddg</li>
+        <li>aswd</li>
+        <!-- style一般建议有组织的放在一个地方（可能是多个css文件的形式），虽然你这样写是比较方便，但不容易维护 -->
+        <!-- 下面table中其实你也用了不建议使用的属性，还有boder和bodercolor是啥么东东嘿嘿，英文别写错 -->
+        <table border="1" bordercolor="red" bgcolor="#66ccff" width="400">
+            <caption>这是一个表格</caption>
+            <tr>
+                <th width="330">表头</th>
+                <th width="330">表头</th>
+                <th width="180">表头</th>
+            </tr>
+            <tr>
+                <td>表内容单元格</td>
+                <td>表内容单元格</td>
+                <td>
+                    <a herf="https://www.baidu.com">操作</a>
+                </td>
+            </tr>
+            <tr>
+                <td>表内容单元格</td>
+                <td>表内容单元格</td>
+                <td>
+                    <a herf="https://www.baidu.com">操作</a>
+                </td>
+            </tr>
+            <tr>
+                <td>表内容单元格</td>
+                <td>表内容单元格</td>
+                <td>
+                    <a herf="https://www.baidu.com">操作</a>
+                </td>
+            </tr>
+            <tr>
+                <td>表内容单元格</td>
+                <td>表内容单元格</td>
+                <td>
+                    <a herf="https://www.baidu.com">操作</a>
+                </td>
+            </tr>
+            <tr>
+                <td>总计</td>
+                <!-- 这个做的不错，被你解决了问题，很棒 -->
+                <td colspan="2">10000</td>
+            </tr>
+        </table>
+        <p>你还没注册吧？下面是个需要提交的表单</p>
+        <p>用户名：</p>
+        <!-- 这个placeholder用的不错，placeholder一般用作你填写的提示 -->
+        <input type="text" name="username" class="username" placeholder="用户名">
+        <p>密码：</p>
+        <input type="password" name="password" class="password" placeholder="密码">
+        <br />
+        <!-- 这种单选框，一般都会有个默认的选择（默认选择男） -->
+        <input type="radio" id="1" name="1" checked>男
+        <input type="radio" id="2" name="1">女
+        <p>城市：（按顺序一共有北京、上海、深圳，成都。默认选择成都，f5刷新界面，这个选择不会消失）</p>
+        <td>
+            <select>
+                <!-- 这个不是成都排第一这样子 -->
+                <option value="1">北京</option>
+                <option value="2">上海</option>
+                <option value="3">深圳</option>
+                <option value="4" selected="selected">成都</option>
+                <!-- 应该类似这样子，但如何选择成都？ -->
+                <!-- <option value="4">成都</option> -->
+            </select>
+        </td>
+        <p>爱好的球类运动：（默认已经选中乒乓球和篮球，f5刷新这个页面，选择不会消失）</p>
+        <input type="checkbox" name="ball" value="ball" checked="checked">乒乓球
+        <br>
+        <input type="checkbox" name="ball" value="ball">羽毛球
+        <br>
+        <input type="checkbox" name="ball" value="ball" checked="checked">篮球
+        <br>
+        <p>个人介绍：</p>
+        <textarea rows="5" cols="60">你好啊，这是一个网页</textarea>
+        <form>
+            <input type="button" value="提交">
+        </form>
+        <p>版权所有&copy</p>
+
+        <!-- 还有给你的form标签没有用到，见:http://www.w3school.com.cn/tags/tag_form.asp -->
+        <!-- 不是我没指出你错误的地方就是合适的哦 -->
+</body>
