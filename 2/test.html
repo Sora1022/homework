@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        
+        .wrapper{text-align:left; padding-bottom:50px; margin:0 auto; width:980px; min-height:600px; height:auto !important; _height:600px;}
+        
+        .title{height:30px; line-height:30px; text-align:center; font-size:14px; font-weight:bold;}
+        
+        .container{padding: 10px; clear:both;}
+        
+        .container .inner1{height:150px; padding: 0 20px; line-height: 150px; text-align: center; border: solid 1px #ccf; vertical-align: middle; float:left; display: inline; margin-left:20px;}
+        
+        .container .inner2{height:150px; padding: 0 20px; vertical-align: middle; display: table-cell; border: solid 1px #ccf;}
+        
+         
+        
+        .container .inner3{display:table; float:left; padding: 0 20px; text-align: center; width:300px; height:150px; position:relative; border: solid 1px #ccf;}
+        
+        .container .inner3 .inner{*position:absolute; width:100%; left:0; vertical-align: middle; display: table-cell; top:50%;}
+        
+        .container .inner3 .inner div{position:relative; top:-50%;}
+        
+         
+        
+        .container .inner4{width:400px; height:300px; display: table-cell; text-align: center; vertical-align: middle; border: solid 1px #aaa; background: #eee;}
+        
+        .container .inner4 i{display: inline-block; height:100%; vertical-align: middle;}
+        
+        .container .inner4 img{vertical-align:middle}
+        
+         
+        
+        .inner5{height:400px; line-height:20px; display: table-cell; width:400px; vertical-align: middle; border: solid 1px #aaa; background: #eee; padding: 10px; text-align: center;}
+        
+        .inner5 span{*writing-mode:tb-rl; *height:100%;}
+        
+        .inner5 span img{vertical-align: middle}
+        
+        </style>
+</head>
+<body>
+        <center class="wrapper">
+                
+                        <h2 class="title">垂直居中测试</h2>
+                
+                        <!--<div class="flag"><a href="http://s05.flagcounter.com/more/g6r"><img src="http://s05.flagcounter.com/count/g6r/bg=FFFFFF/txt=000000/border=CCCCCC/columns=2/maxflags=12/viewers=0/labels=0/" alt="free counters" border="0"></a></div>-->
+                
+                        <div class="mt20 container">
+                
+                            <div class="inner1">一段文本</div>
+                
+                            <div class="inner1"><img src='/img/1.jpg'/></div>
+                
+                            <div class="inner1">又是一段文本&nbsp;<img src='/img/2.jpg'/></div>
+                
+                        </div>
+                
+                 
+                
+                        <div class="mt20 container">
+                
+                            <div class="inner2">一段文本</div>
+                
+                            <div class="inner2"><img src='/img/1.jpg'/></div>
+                
+                            <div class="inner2">又是一段文本&nbsp;<img src='/img/2.jpg'/></div>
+                
+                        </div>
+                
+                        <div class="mt20 container">
+                
+                            <div class="inner3"><div class="inner"><div>第一行文本<br/>第二行文本<br/>第三行文本<br/>第一行文本<br/>第二行文本</div></div></div>
+                
+                            <div class="inner3"><div class="inner"><div><img src='/img/1.jpg'/></div></div></div>
+                
+                            <div class="inner3"><div class="inner"><div>又是一段文本&nbsp;&nbsp;&nbsp;<img src='/img/2.jpg'/></div></div></div>
+                
+                        </div>
+                
+                        <div class="mt20 container">
+                
+                            <div class="inner4"><i></i><img src="/img/1.jpg"/> </div>
+                
+                            <div class="inner4"><i></i>一行<br/>二行<br/>三行</div>
+                
+                        </div>
+                
+                        <div class="mt20 container">
+                
+                            <div class="inner5"><span><img src="/img/2.jpg"/></span></div>
+                
+                            <div class="inner5"><span>一行<br/>二行<br/>三行</span></div>
+                
+                        </div>
+                
+                    </center>
+</body>
+</html>
