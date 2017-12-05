@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link href="reset.css" rel="stylesheet" type="text/css" />
     <style type="text/css">
         body {
             line-height: 15px;
         }
-
+        
         .box{
             padding: 20px;
             box-sizing: border-box;
@@ -74,7 +75,7 @@
             line-height: 15px;
             color: #1a1a1a;
             width:auto;
-            tab-size: 2;
+            text-indent: 2cm;
             white-space:pre-wrap;
             word-wrap: break-word;
             word-break:normal;
@@ -82,14 +83,20 @@
 
         .title{
             white-space:pre-wrap;
-            tab-size: 4;
-            line-height: 30px; 
+            line-height: 30px;
+            text-indent: 1cm; 
         }
         
-        .clearfix{
-            overflow: auto;
-        }
-            
+        .clearfix:after { 
+            content:"\200B"; 
+            display:block; 
+            height:0; 
+            clear:both; 
+        } 
+        .clearfix {*zoom:1;}
+         /*ie6/7*/
+
+
     </style>
 </head>
 <body>
@@ -97,23 +104,23 @@
     <!-- 这是一个盒子 -->
     <div class="left">
         <img src="image/cat.jpg" class="img1">
-        <p class="text clearfix">我是主角</p>
+        <p class="text">我是主角</p>
     </div>
     <!-- 这是左边 -->
     <div class="middle">
         <!-- 这是中间 -->
-        <h3 class="title">     猫咪后院（手机游戏）</h3>
+        <h3 class="title">猫咪后院（手机游戏）</h3>
         <p class="content">
-             《猫咪后院》是一款由日本开发商HitPoint lrc开发的猫咪题材的养成游戏。你需要照顾这只猫咪来体验养猫的乐趣。
+            《猫咪后院》是一款由日本开发商HitPoint lrc开发的猫咪题材的养成游戏。你需要照顾这只猫咪来体验养猫的乐趣。
         </p>
-        <h3 class="title">     游戏设定</h3>
+        <h3 class="title">游戏设定</h3>
         <p class="content">
-              本作和其他的养成游戏的不同的地方在于，这游戏不用担心猫咪会饿死,不照顾它们也不会发生各种问题（比如说劣化、<br  />
+            本作和其他的养成游戏的不同的地方在于，这游戏不用担心猫咪会饿死,不照顾它们也不会发生各种问题（比如说劣化、<br  />
             黑化、病娇化等）,因为它们就只是把你的后院当饭店，来去如风到有时候你还不知道它们来过。
         </p>
-        <h3 class="title">     游戏评价</h3>
+        <h3 class="title">游戏评价</h3>
         <p class="content">
-              这款游戏十分轻度，一个玩家打开游戏以后收一下鱼干，拍个照片，再补充一下猫粮，前后可能连三分钟都不到，但是<br  />
+            这款游戏十分轻度，一个玩家打开游戏以后收一下鱼干，拍个照片，再补充一下猫粮，前后可能连三分钟都不到，但是<br  />
             经常回来看看——又新来了什么猫，有没有新的萌图，或者猫粮够不够。在上班路上，在工作间隙，在睡觉前，都可以打开<br  />
             游戏点两下，好像一个真正的养猫人那样为了让猫大爷更舒坦而殚精竭虑，看到猫大爷撅着屁股埋在纸袋里比谁都开心。
         </p>
