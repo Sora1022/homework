@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        .box{
+            width: 320px;
+            margin: 0 auto;
+        }
+        ul,li {
+               list-style: none;
+               }
+
+        ul{
+            width: 330px;
+            overflow: hidden;
+            padding: 5px;
+            border: 1px black solid;
+        }
+
+        li{
+            margin: 5px 5px 5px 5px;
+            float: left;
+            width:100px;
+            /* 本来想用div容器+图片（宽度用33.3%）的方法做的，
+            做着做着觉得用这种方法也挺快就没有用图片 =_=!! */
+            height: 100px;
+            background-color: orange;
+            border-top-left-radius:5px;
+            border-top-right-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+        }
+
+        .clearfix:after { 
+            content:"\200B"; 
+            display:block; 
+            height:0; 
+            clear:both; 
+        }
+
+        .clearfix {*zoom:1;}
+         /*ie6/7*/
+    </style>
+</head>
+<body>
+    <div class="box clearfix">
+       <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+</body>
+</html>
