@@ -5,34 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="style/normalize.css">
     <style type="text/css">
+        *{
+          margin:0;
+          padding:0;
+          box-sizing:border-box;
+        }
+
         .box{
-            width: 320px;
-            margin: 0 auto;
-        }
-        ul,li {
-               list-style: none;
-               }
-
-        ul{
-            width: 330px;
+            box-sizing: border-box;
+            width: 500px;
+            height: 500px;
+            margin: 2%;
+            padding: 2%;
+            padding-right: 0.5%;
+            padding-bottom: 0.5%;
             overflow: hidden;
-            padding: 5px;
-            border: 1px black solid;
+            overflow-x: hidden;
+            overflow-y: auto;
         }
 
-        li{
-            margin: 5px 5px 5px 5px;
+        .square{
+            margin: 1% 1% 1% 1%;
             float: left;
-            width:100px;
-            /* 本来想用div容器+图片（宽度用33.3%）的方法做的，
-            做着做着觉得用这种方法也挺快就没有用图片 =_=!! */
-            height: 100px;
+            width:30.7%;
+            height: 30.7%;
             background-color: orange;
-            border-top-left-radius:5px;
-            border-top-right-radius:5px;
-            border-bottom-left-radius:5px;
-            border-bottom-right-radius:5px;
+            border-radius: 10%;
+
         }
 
         .clearfix:after { 
@@ -48,17 +49,15 @@
 </head>
 <body>
     <div class="box clearfix">
-       <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
+       <div class="square"></div>
+       <div class="square"></div>
+       <div class="square"></div>
+       <div class="square"></div>
+       <div class="square"></div>
+       <div class="square"></div>
+       <div class="square"></div>
+       <div class="square"></div>
+       <div class="square"></div>
     </div>
 </body>
 </html>

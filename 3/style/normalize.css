@@ -1,0 +1,190 @@
+html {
+    line-height: 1.15;
+    /* 1 */
+    -ms-text-size-adjust: 100%;
+    /* 2 */
+    -webkit-text-size-adjust: 100%;
+    /* 2 */
+}
+
+
+/* 1.修正在所有浏览器中行高的显示问题
+   2.防止当设备变更为windows phone 和ios时字体大小的恢复 
+  */
+
+body {
+    margin: 0;
+}
+
+
+/* 添加在ie9中margin的正确显示 */
+
+figure {
+    margin: 1em 40px;
+}
+
+
+/* 添加了在ie8中margin的正确显示*/
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+
+/*修正在谷歌、火狐和safari浏览器中"section"和"article"中"h1"元素的字体大小以及外边距*/
+
+hr {
+    box-sizing: content-box;
+    /* 1 */
+    height: 0;
+    /* 1 */
+    overflow: visible;
+    /* 2 */
+}
+
+
+/* 1.新增了在火狐浏览器中盒子大小的正确显示
+   2.显示在ie浏览器中溢出的内容 
+   */
+
+pre {
+    font-family: monospace, monospace;
+    /* 1 */
+    font-size: 1em;
+    /* 2 */
+}
+
+
+/* 1. 修正了在所有浏览器中字体大小的继承和缩放。
+   2. 修正了在所有浏览器中字体尺寸的临时大小。
+   */
+
+a {
+    background-color: transparent;
+    /* 1 */
+    -webkit-text-decoration-skip: objects;
+    /* 2 */
+}
+
+
+/* 文本 1. 移除了在ie10中活动链接的灰色背景。 
+        2. 移除了在ios8和safari8以上版本中链接下划线的间隔。
+*/
+
+abbr[title] {
+    border-bottom: none;
+    /* 1 */
+    text-decoration: underline;
+    /* 2 */
+    text-decoration: underline dotted;
+    /* 2 */
+}
+
+
+/* 1. 移除了在Chrome 57-和Firefox 39-版本的底部边框
+   2. 增加了在Chrome, Edge, IE, Opera, and Safari浏览器中正确的文本装饰。
+*/
+
+code,
+kbd,
+samp {
+    font-family: monospace, monospace;
+    /* 1 */
+    font-size: 1em;
+    /* 2 */
+}
+
+
+/* 1. 修正了在所有浏览器中字体大小的继承和缩放。
+    2. 修正了在所有浏览器中字体尺寸的临时大小。
+*/
+
+mark {
+    background-color: #ff0;
+    color: #000;
+}
+
+
+/*添加了在ie9以下版本中正确的背景及文本颜色。*/
+
+small {
+    font-size: 80%;
+}
+
+
+/*添加了在所有浏览器中正确的字体大小。*/
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+
+/*在ie浏览器中隐藏溢出 。*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: sans-serif;
+    /* 1 */
+    font-size: 100%;
+    /* 1 */
+    line-height: 1.15;
+    /* 1 */
+    margin: 0;
+    /* 2 */
+}
+
+
+/* 表单  1.变更了在所有浏览器中的字体。
+          2.移除在Firefox and Safari浏览器中的外边距.
+ */
+
+fieldset {
+    padding: 0.35em 0.75em 0.625em;
+}
+
+
+/* 修正了在Firefox浏览器中的内边距。*/
+
+legend {
+    box-sizing: border-box;
+    /* 1 */
+    color: inherit;
+    /* 2 */
+    display: table;
+    /* 1 */
+    max-width: 100%;
+    /* 1 */
+    padding: 0;
+    /* 3 */
+    white-space: normal;
+    /* 1 */
+}
+
+
+/* 1.修正了在ie浏览器中文本包装的边缘。
+   2. 修正了在ie浏览器中颜色继承的形式。
+   3. 移除了在所有浏览器中的内边距，确保开发者在将其归零时不会出纰漏。
+*/
+
+progress {
+    display: inline-block;
+    /* 1 */
+    vertical-align: baseline;
+    /* 2 */
+}
+
+
+/* 1.添加了在ie9中的正确显示 。
+   2. 在谷歌、火狐和欧鹏浏览器中添加正确的垂直对齐属性。
+   */
+
+[hidden] {
+    display: none;
+}
+
+
+/* Hidden   添加了在ie10中的正确显示 */
