@@ -15,36 +15,33 @@
 
         .box{
             box-sizing: border-box;
-            width: 500px;
-            height: 500px;
             margin: 2%;
-            padding: 2%;
-            padding-right: 0.5%;
-            padding-bottom: 0.5%;
+            width: 90%;
+            padding-bottom: 90%;            
             overflow: hidden;
             overflow-x: hidden;
             overflow-y: auto;
         }
 
         .square{
+            position: relative;
             margin: 1% 1% 1% 1%;
             float: left;
-            width:30.7%;
-            height: 30.7%;
+            width: 26%;
+            padding-bottom: 26%;
             background-color: orange;
             border-radius: 10%;
-
         }
 
-        .clearfix:after { 
-            content:"\200B"; 
-            display:block; 
-            height:0; 
-            clear:both; 
+        .clearfix:after{
+            visibility: hidden;
+            display: inline-block;
+            content: "";
+            height: 0;
+            clear: both;
+            *zoom: 1;
         }
-
-        .clearfix {*zoom:1;}
-         /*ie6/7*/
+        
     </style>
 </head>
 <body>
