@@ -5,8 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="style/normalize.css">
+    <style type="text/css">
+    html,body{
+        width: 100%;
+        padding-bottom: 100%;
+    }
+
+    h1,botton{
+        text-align: center;
+        top: 0;
+        height: 30px;
+        line-height: 45px;
+        font-size: 18px;
+        display: inline-block;
+    }
+
+    h1{
+        margin-left: 38%;
+        display: inline;
+    }
+
+    h3{
+        top: 0;
+        line-height: 20px;
+        font-size: 15px;
+        display: inline;
+    }
+
+    .title{
+        width: 100%;
+        padding-bottom: 2%;
+        background: #18b4ed;
+        color: #fff;
+    }
+
+    .content{
+        text-align: right;
+        float: right;
+    }
+
+    img{
+        width: 45px;
+        height: 45px;
+    }
+    
+    input{
+        margin-top: 5px;
+        width: 100%;
+    }
+
+    .botton{
+        margin-top: 30px;
+        text-align: center;
+        width: 100%;
+        padding-bottom: 4%;
+        background: #18b4ed;
+        color: #fff; 
+    }
+
+    .background-image{
+        padding-left:50px;  
+        width:45px; 
+        height:45px;
+        border:0px;
+        background-repeat: no-repeat;
+        background-position: top, left;
+    }
+
+    .caution{
+        text-align: right;
+        color: #18b4ed;
+    }
+
+    </style>
 </head>
 <body>
-    
+    <header>
+        <div class="title">
+          <h3 ><a herf="www.baidu.com">注册</a></h3>
+          <h1 ><strong>登录</strong></h1>
+          <h3 class="content"><a herf="www.baidu.com">关闭</a></h3>
+        </div>
+    </header>  
+    <!-- 这是标题栏 -->
+    <input type="text" placeholder="请输入手机号" background-image: url(image/iphone.png);><br>
+    <!-- 输入用户名 -->
+    <input type="text" placeholder="请输入密码"  background-image: url(image/locked2.png);><br>
+    <!-- 输入密码 -->
+    <botton class="botton">登录</botton><br>
+    <!-- 这是登录按钮 -->
+    <p class="caution"><a herf="www.baidu.com">忘记密码?</a></p>
+    <!-- 这是链接 -->
 </body>
 </html>
