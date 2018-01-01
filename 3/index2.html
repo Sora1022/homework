@@ -10,6 +10,8 @@
     html,body{
         width: 100%;
         padding-bottom: 100%;
+        background-color:rgb(245, 239, 239);
+        overflow: hidden;
     }
 
     h1,botton{
@@ -22,12 +24,11 @@
     }
 
     h1{
-        margin-left: 38%;
+        margin-left: 40%;
         display: inline;
     }
 
     a{
-        top: 0;
         line-height: 20px;
         font-size: 15px;
         display: inline;
@@ -41,18 +42,18 @@
     }
 
     .content{
-        text-align: right;
-        float: right;
-    }
-
-    img{
-        width: 45px;
-        height: 45px;
+        position: relative;
+        text-align: right; 
     }
     
     input{
-        margin-top: 5px;
+        margin-top: 10px;
         width: 100%;
+    }
+
+    input::-webkit-input-placeholder{
+        text-align: center;
+        color: #E6E6FA;
     }
 
     .botton{
@@ -64,13 +65,32 @@
         color: #fff; 
     }
 
-    .background-image{
-        padding-left:50px;  
-        width:45px; 
+    .background1{  
+        width:100%; 
         height:45px;
         border:0px;
+        background-image:url(image/iphone.png);
         background-repeat: no-repeat;
-        background-position: top, left;
+        background-attachment: scroll;
+        background-position: left;
+        background-size: 45px 45px;
+        background-origin: content-box;
+        background-clip: padding-box;
+        background-color: #fff;
+    }
+
+    .background2{
+        width:100%; 
+        height:45px;
+        border:0px;
+        background-image:url(image/locked2.png);
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: left;
+        background-size: 45px 45px;
+        background-origin: content-box;
+        background-clip: padding-box;
+        background-color: #fff;  
     }
 
     .caution{
@@ -88,14 +108,9 @@
           <a herf="www.baidu.com" class="content">关闭</a>
         </div>
     </header>  
-    <!-- 这是标题栏 -->
-    <input type="text" placeholder="请输入手机号" background-image: url(image/iphone.png);><br>
-    <!-- 输入用户名 -->
-    <input type="text" placeholder="请输入密码"  background-image: url(image/locked2.png);><br>
-    <!-- 输入密码 -->
+    <input type="text" placeholder="请输入手机号" class="background1"><br>
+    <input type="text" placeholder="请输入密码" class="background2"><br>
     <botton class="botton">登录</botton><br>
-    <!-- 这是登录按钮 -->
     <p class="caution"><a herf="www.baidu.com">忘记密码?</a></p>
-    <!-- 这是链接 -->
 </body>
 </html>

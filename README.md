@@ -1,6 +1,17 @@
 # homework
 homework
 
+##V1.1##
+**2018.1.1**
+
+- 移除了无用属性overflow-x，overflow-y
+- 移除了box元素中的无用属性padding
+- 移除了无用标签h3
+- 修复了clearfix属性无效的错误
+- 修复了width属性百分比数值不为整数的错误
+- 修复了input背景图片不能正常显示的错误
+
+
 ##V2.4##
 **2017.12.09**
 
