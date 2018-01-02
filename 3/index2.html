@@ -35,6 +35,7 @@
     }
 
     .title{
+        position: relative;
         width: 100%;
         padding-bottom: 2%;
         background: #18b4ed;
@@ -42,8 +43,9 @@
     }
 
     .content{
-        position: relative;
-        text-align: right; 
+        position: absolute;
+        margin: 1px; 
+        border: 1px solid red;
     }
     
     input{
@@ -92,12 +94,10 @@
     </style>
 </head>
 <body>
-    <header>
-        <div class="title">
+    <header class="title">
           <a herf="www.baidu.com">注册</a>
           <h1 ><strong>登录</strong></h1>
           <a herf="www.baidu.com" class="content">关闭</a>
-        </div>
     </header>  
     <div>
        <input type="text" placeholder="请输入手机号" class="background1"><br>
