@@ -1,7 +1,26 @@
 # homework
 homework
 
-##V1.1##
+##V3.2.2##
+**2018.1.2**
+
+- 移除了input中背景图片的无效属性
+- 移除了body中的多余标签div
+- 移除了无用标签br
+- 修复了input中输入内容会覆盖背景图片的问题
+- 修复了input中placeholder文本位置不正确的问题
+- 修复了header标签中“关闭”文本位置显示不正确的问题
+- 新增了一个新标签main
+ 
+##V3.1.3##
+**2018.1.2**
+
+- 移除了多余的clearfix属性
+- 移除了错误属性box容器的margin属性
+- 新增了square元素的外边距
+- 修复了box容器的claerfix属性不正常的问题
+
+##V3.1.2##
 **2018.1.1**
 
 - 移除了无用属性overflow-x，overflow-y

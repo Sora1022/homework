@@ -24,7 +24,7 @@
     }
 
     h1{
-        margin-left: 40%;
+        margin-left: 45%;
         display: inline;
     }
 
@@ -44,19 +44,20 @@
 
     .content{
         position: absolute;
-        margin: 1px; 
-        border: 1px solid red;
+        top: 20%;
+        right: 2%; 
+    }
+
+    .text{
+        position: absolute;
+        top: 20%;
+        left: 2%; 
     }
     
     input{
         margin-top: 10px;
         padding-left: 50px;
         width: 100%;
-    }
-
-    input::-webkit-input-placeholder{
-        text-align: center;
-        color: #E6E6FA;
     }
 
     .botton{
@@ -95,15 +96,15 @@
 </head>
 <body>
     <header class="title">
-          <a herf="www.baidu.com">注册</a>
-          <h1 ><strong>登录</strong></h1>
-          <a herf="www.baidu.com" class="content">关闭</a>
+        <a herf="www.baidu.com" class="text">注册</a>
+        <h1 ><strong>登录</strong></h1>
+        <a herf="www.baidu.com" class="content">关闭</a>
     </header>  
-    <div>
-       <input type="text" placeholder="请输入手机号" class="background1"><br>
-       <input type="text" placeholder="请输入密码" class="background2"><br>
-    </div>
-    <botton class="botton">登录</botton><br>
-    <p class="caution"><a herf="www.baidu.com">忘记密码?</a></p>
+    <main>
+       <input type="text" placeholder="请输入手机号" class="background1">
+       <input type="password" placeholder="请输入密码" class="background2">
+       <botton class="botton">登录</botton>
+       <p class="caution"><a herf="www.baidu.com">忘记密码?</a></p>
+    </main>
 </body>
 </html>
