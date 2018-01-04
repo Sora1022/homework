@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+  
+  html {
+    /*font-size : 14px;*/
+    font-size: calc(100vw/26.785);
+    font-family: 'Microsoft YaHei',"Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%; }
+  
+  li, ol {
+    list-style: none; }
+  
+  .clearfix:after {
+    content: '\0020';
+    display: block;
+    height: 0;
+    clear: both; }
+  
+  .clearfix {
+    *zoom: 1; }
+  
+  .wrap {
+    margin: 0 0.71429rem; }
+  
+  .head {
+    height: 3.14286rem;
+    background-color: #91d4da;
+    font-size: 1.28571rem;
+    text-align: center;
+    line-height: 3.14286rem;
+    color: #fff;
+    font-weight: bold; }
+    .head .back {
+      vertical-align: middle;
+      position: absolute; }
+    .head .title {
+      vertical-align: middle; }
+  
+  .navbar {
+    height: 3.14286rem;
+    background-color: #fff;
+    font-size: 1.28571rem;
+    text-align: center;
+    line-height: 3.14286rem;
+    font-weight: bold; }
+    .navbar ul li {
+      width: 20%;
+      float: left;
+      list-style: none; }
+      .navbar ul li a {
+        text-decoration: none;
+        color: #6e6e6e; }
+    .navbar ul .active {
+      border-bottom: 0.14286rem solid #91d4da; }
+  
+  .banner img {
+    height: 14.71429rem;
+    width: 100%; }
+  
+  .label {
+    height: 8rem;
+    margin: 0 0.71429rem;
+    padding: 1.28571rem 0;
+    border-bottom: 0.14286rem solid #ebebeb;
+    height: 10rem; }
+    .label ul {
+      margin-right: -6.42857rem; }
+      .label ul li {
+        float: left;
+        width: 4.85714rem;
+        margin-left: 0.42857rem;
+        overflow: hidden; }
+        .label ul li img {
+          width: 3.57143rem;
+          height: 3.57143rem; }
+        .label ul li span {
+          display: block;
+          margin-left: 0.57143rem;
+          margin-top: 1.28571rem;
+          margin-bottom: 1.28571rem; }
+  
+  .tag {
+    margin: 14px 10px; }
+    .tag ul li {
+      float: left;
+      width: 8.42857rem;
+      border-right: 0.14286rem solid #ebebeb;
+      margin: 1.14286rem 0; }
+      .tag ul li img {
+        display: block;
+        margin: 0 auto; }
+      .tag ul li h3, .tag ul li p {
+        text-align: center; }
+      .tag ul li h3 {
+        font-size: 1.14286rem;
+        line-height: 2.28571rem; }
+      .tag ul li:last-child {
+        border: none; }
+  
+  .cc {
+    height: 0.85714rem;
+    background-color: #f6f6f6; }
+  
+  .model .title-name {
+    height: 3.14286rem;
+    line-height: 3.14286rem;
+    color: #575757;
+    border-bottom: 0.14286rem solid #ebebeb; }
+  
+  .model .model-content {
+    padding: 0.71429rem 0; }
+    .model .model-content .model-img {
+      float: left;
+      width: 6.71429rem; }
+      .model .model-content .model-img img {
+        width: 6.57143rem;
+        height: 6.14286rem; }
+    .model .model-content .model-word {
+      float: right;
+      width: 18.57143rem; }
+      .model .model-content .model-word p {
+        float: left;
+        padding: 0.71429rem;
+        height: 2.71429rem;
+        width: 8.57143rem;
+        margin-left: 0.57143rem;
+        margin-bottom: 0.57143rem;
+        text-align: center;
+        background-color: #f8f8f8; }
+  
+  .post {
+    position: relative; }
+    .post ul li {
+      padding: 0.71429rem 0;
+      border-bottom: 0.14286rem solid #ebebeb; }
+      .post ul li h4 {
+        font-size: 1.42857rem;
+        font-weight: bold;
+        color: #525252; }
+      .post ul li span {
+        margin-left: 0.28571rem;
+        color: #cbcbcb; }
+      .post ul li img {
+        float: left;
+        width: 7.57143rem;
+        height: 5.28571rem; }
+      .post ul li:last-child {
+        border: none; }
+      .post ul li.one h4 {
+        position: absolute;
+        left: 8.57143rem; }
+      .post ul li.one span {
+        position: relative;
+        top: 4rem;
+        left: 0.71429rem; }
+      .post ul li.two h4 {
+        margin-bottom: 0.71429rem; }
+      .post ul li.two img {
+        margin-right: 0.71429rem; }
+  
+  .foot {
+    height: 3.57143rem;
+    background-color: #f6f6f6; }
