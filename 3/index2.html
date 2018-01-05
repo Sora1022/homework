@@ -7,38 +7,32 @@
     <title>Document</title>
     <link rel="stylesheet" href="style/normalize.css">
     <style type="text/css">
+    *{
+        box-sizing: border-box;
+    }
+
     html,body{
         width: 100%;
-        padding-bottom: 100%;
-        background-color:rgb(245, 239, 239);
-        overflow: hidden;
+        height: 100%;
+        background-color:#eff0f4;
     }
 
     h1,botton{
-        text-align: center;
-        top: 0;
-        height: 30px;
+        text-align: center; 
         line-height: 45px;
         font-size: 18px;
-        display: inline-block;
-    }
-
-    h1{
-        margin-left: 45%;
-        display: inline;
     }
 
     a{
         line-height: 20px;
         font-size: 15px;
-        display: inline;
     }
 
     .title{
         position: relative;
         width: 100%;
-        padding-bottom: 2%;
-        background: #18b4ed;
+        height: 8%;
+        background: #5fc0cd;
         color: #fff;
     }
 
@@ -53,11 +47,11 @@
         top: 20%;
         left: 2%; 
     }
-    
+
     input{
+        box-sizing: border-box;
         margin-top: 10px;
-        padding-left: 50px;
-        width: 100%;
+        padding-left: 50px; 
     }
 
     .botton{
@@ -65,8 +59,10 @@
         text-align: center;
         width: 100%;
         height: 4%;
-        background: #18b4ed;
+        background: #5fc0cd;
         color: #fff; 
+        letter-spacing: 5px;
+        display: inline-block;
     }
 
     .background1{  
@@ -75,7 +71,9 @@
         border:0px;
         background-image:url(image/iphone.png);
         background-repeat: no-repeat;
-        background-size: 45px 45px;
+        background-position-x: 15px;
+        background-position-y: center;
+        background-size: 25px 25px;
     }
 
     .background2{
@@ -84,12 +82,14 @@
         border:0px;
         background-image:url(image/locked2.png);
         background-repeat: no-repeat;
-        background-size: 45px 45px;
+        background-position-x: 15px;
+        background-position-y: center;
+        background-size: 25px 25px;
     }
 
     .caution{
         text-align: right;
-        color: #18b4ed;
+        color: #5fc0cd;
     }
 
     </style>
@@ -101,8 +101,8 @@
         <a herf="www.baidu.com" class="content">关闭</a>
     </header>  
     <main>
-       <input type="text" placeholder="请输入手机号" class="background1">
-       <input type="password" placeholder="请输入密码" class="background2">
+         <input type="text" placeholder="请输入手机号" class="background1">
+         <input type="password" placeholder="请输入密码" class="background2">   
        <botton class="botton">登录</botton>
        <p class="caution"><a herf="www.baidu.com">忘记密码?</a></p>
     </main>
