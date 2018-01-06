@@ -11,15 +11,15 @@
         box-sizing: border-box;
     }
 
-    html,body{
+    body{
         width: 100%;
         height: 100%;
         background-color:#eff0f4;
     }
 
-    h1,botton{
+    .head{
         text-align: center; 
-        line-height: 45px;
+        line-height: 10px;
         font-size: 18px;
     }
 
@@ -29,9 +29,9 @@
     }
 
     .title{
-        position: relative;
+        position: absolute;
         width: 100%;
-        height: 8%;
+        height: 45px;
         background: #5fc0cd;
         color: #fff;
     }
@@ -39,27 +39,37 @@
     .content{
         position: absolute;
         top: 20%;
-        right: 2%; 
+        left: 2%;
     }
 
     .text{
         position: absolute;
         top: 20%;
-        left: 2%; 
+        right: 2%;
     }
 
-    input{
+    .input1{
+        position: relative;
+        box-sizing: border-box;
+        margin-top: 55px;
+        padding-left: 50px; 
+    }
+
+    .input2{
+        position: relative;
         box-sizing: border-box;
         margin-top: 10px;
         padding-left: 50px; 
     }
-
     .botton{
+        text-align: center; 
         margin-top: 20px;
         text-align: center;
         width: 100%;
         height: 4%;
         background: #5fc0cd;
+        line-height: 45px;
+        font-size: 18px;
         color: #fff; 
         letter-spacing: 5px;
         display: inline-block;
@@ -92,17 +102,23 @@
         color: #5fc0cd;
     }
 
+    body .clearfix:after {
+    display: table;
+    content: '';
+    clear: both;
+    }
+
     </style>
 </head>
 <body>
-    <header class="title">
+    <header class="title clearfix">
         <a herf="www.baidu.com" class="text">注册</a>
-        <h1 ><strong>登录</strong></h1>
+        <h1 class="head">登录</h1>
         <a herf="www.baidu.com" class="content">关闭</a>
     </header>  
     <main>
-         <input type="text" placeholder="请输入手机号" class="background1">
-         <input type="password" placeholder="请输入密码" class="background2">   
+         <input type="text" placeholder="请输入手机号" class="background1 input1">
+         <input type="password" placeholder="请输入密码" class="background2 input2">   
        <botton class="botton">登录</botton>
        <p class="caution"><a herf="www.baidu.com">忘记密码?</a></p>
     </main>
