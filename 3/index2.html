@@ -18,7 +18,8 @@
     }
 
     .head{
-        text-align: center; 
+        text-align: center;
+        display: inline-block;
         line-height: 10px;
         font-size: 18px;
     }
@@ -29,21 +30,20 @@
     }
 
     .title{
-        position: absolute;
         width: 100%;
         height: 45px;
+        margin-bottom: 10px;
         background: #5fc0cd;
         color: #fff;
     }
 
     .content{
-        position: absolute;
+        text-align: right;
         top: 20%;
         left: 2%;
     }
 
     .text{
-        position: absolute;
         top: 20%;
         right: 2%;
     }
@@ -51,7 +51,6 @@
     .input1{
         position: relative;
         box-sizing: border-box;
-        margin-top: 55px;
         padding-left: 50px; 
     }
 
@@ -61,7 +60,7 @@
         margin-top: 10px;
         padding-left: 50px; 
     }
-    .botton{
+    .button{
         text-align: center; 
         margin-top: 20px;
         text-align: center;
@@ -102,25 +101,19 @@
         color: #5fc0cd;
     }
 
-    body .clearfix:after {
-    display: table;
-    content: '';
-    clear: both;
-    }
-
     </style>
 </head>
 <body>
-    <header class="title clearfix">
-        <a herf="www.baidu.com" class="text">注册</a>
+    <header class="title">
+        <a class="text">注册</a>
         <h1 class="head">登录</h1>
-        <a herf="www.baidu.com" class="content">关闭</a>
+        <a class="content">关闭</a>
     </header>  
     <main>
          <input type="text" placeholder="请输入手机号" class="background1 input1">
          <input type="password" placeholder="请输入密码" class="background2 input2">   
-       <botton class="botton">登录</botton>
-       <p class="caution"><a herf="www.baidu.com">忘记密码?</a></p>
+       <button class="button">登录</button>
+       <p class="caution"><a>忘记密码?</a></p>
     </main>
 </body>
 </html>
