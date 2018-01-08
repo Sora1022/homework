@@ -17,9 +17,10 @@
         background-color:#eff0f4;
     }
 
+
+    /* header  */
     .head{
         text-align: center;
-        display: inline-block;
         line-height: 10px;
         font-size: 18px;
     }
@@ -37,17 +38,20 @@
         color: #fff;
     }
 
-    .content{
-        text-align: right;
-        top: 20%;
-        left: 2%;
-    }
-
     .text{
-        top: 20%;
-        right: 2%;
+        position: absolute;
+        margin-top: 15px;
+        left: 15px;
     }
 
+    .content{
+        position: absolute;
+        margin-top: 15px;
+        right: 15px;
+    }
+
+
+    /* main  */
     .input1{
         position: relative;
         box-sizing: border-box;
@@ -60,6 +64,7 @@
         margin-top: 10px;
         padding-left: 50px; 
     }
+
     .button{
         text-align: center; 
         margin-top: 20px;
@@ -73,6 +78,7 @@
         letter-spacing: 5px;
         display: inline-block;
     }
+    /* 登陆按钮  */
 
     .background1{  
         width:100%; 
@@ -112,7 +118,7 @@
     <main>
          <input type="text" placeholder="请输入手机号" class="background1 input1">
          <input type="password" placeholder="请输入密码" class="background2 input2">   
-       <button class="button">登录</button>
+       <div class="button">登录</div>
        <p class="caution"><a>忘记密码?</a></p>
     </main>
 </body>
