@@ -43,12 +43,16 @@ body {
 .login-username {
   position: relative;
   padding-left: 50px;
+  outline-color: #fff;
+  outline-width: 0; 
 }
 
 .login-password {
   position: relative;
   margin-top: 10px;
   padding-left: 50px;
+  outline-color: #fff;
+  outline-width: 0; 
 }
 
 .login-submit {
