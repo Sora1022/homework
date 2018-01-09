@@ -10,7 +10,7 @@ body {
 }
 
 /* header 登录顶部  */
-.title {
+.login-header {
   position: relative;
   width: 100%;
   height: 45px;
@@ -27,12 +27,12 @@ body {
   font-size: 18px;
 }
 
-.text {
+.register {
   position: absolute;
   left: 15px;
 }
 
-.content {
+.close {
   position: absolute;
   top: 0;
   right: 15px;
@@ -40,18 +40,18 @@ body {
 
 /* header 登录顶部-结束  */
 /* main  */
-.input1 {
+.login-username {
   position: relative;
   padding-left: 50px;
 }
 
-.input2 {
+.login-password {
   position: relative;
   margin-top: 10px;
   padding-left: 50px;
 }
 
-.button {
+.login-submit {
   text-align: center;
   margin-top: 20px;
   text-align: center;
@@ -65,29 +65,29 @@ body {
 }
 
 /* 登陆按钮  */
-.background1 {
+.icon-phone {
   width: 100%;
   height: 45px;
   border: 0px;
-  background-image: url(image/iphone.png);
+  background-image: url(../image/iphone.png);
   background-repeat: no-repeat;
   background-position-x: 15px;
   background-position-y: center;
   background-size: 25px;
 }
 
-.background2 {
+.icon-pwd {
   width: 100%;
   height: 45px;
   border: 0px;
-  background-image: url(image/locked2.png);
+  background-image: url(../image/locked2.png);
   background-repeat: no-repeat;
   background-position-x: 15px;
   background-position-y: center;
   background-size: 25px;
 }
 
-.caution {
+.forget-pwd {
   line-height: 20px;
   font-size: 15px;
   text-align: right;
