@@ -22,8 +22,8 @@ body{
 }
 
 .head{
-    text-align: center;
     margin: 0;
+    text-align: center;
     font-size: 18px;
 }
 
@@ -58,18 +58,17 @@ body{
 }
 
 .login-submit{
-    text-align: center;
+    display: inline-block;
     padding: 0; 
-    border-width: 0;
+    width: 100%;
     margin-top: 20px;
     text-align: center;
-    width: 100%;
-    background: #5fc0cd;
     line-height: 45px;
     font-size: 18px;
+    background: #5fc0cd;
     color: #fff; 
+    border-width: 0;
     letter-spacing: 5px;
-    display: inline-block;
 }
 /* 登陆按钮  */
 
@@ -96,9 +95,9 @@ body{
 }
 
 .forget-pwd{
+    text-align: right;
     line-height: 20px;
     font-size: 15px;
-    text-align: right;
     color: #5fc0cd;
 }
 
