@@ -21,26 +21,26 @@ body {
   color: #fff;
 }
 
-.head {
+.login-header > .head {
   margin: 0;
   text-align: center;
   font-size: 18px;
 }
 
-.register {
+.login-header > .register {
   position: absolute;
   left: 15px;
 }
 
-.close {
+.login-header > .close {
   position: absolute;
   top: 0;
   right: 15px;
 }
 
 /* header 登录顶部-结束  */
-/* main  */
-.login-username {
+/* main 输入框 */
+.login-username, .login-password {
   position: relative;
   padding-left: 50px;
   outline-color: #fff;
@@ -48,13 +48,10 @@ body {
 }
 
 .login-password {
-  position: relative;
   margin-top: 10px;
-  padding-left: 50px;
-  outline-color: #fff;
-  outline-width: 0;
 }
 
+/* main 输入框-结束 */
 .login-submit {
   display: inline-block;
   padding: 0;
@@ -70,7 +67,7 @@ body {
 }
 
 /* 登陆按钮  */
-.icon-phone {
+.icon-phone, .icon-pwd {
   width: 100%;
   height: 45px;
   border: 0px;
@@ -82,14 +79,7 @@ body {
 }
 
 .icon-pwd {
-  width: 100%;
-  height: 45px;
-  border: 0px;
   background-image: url(../image/locked2.png);
-  background-repeat: no-repeat;
-  background-position-x: 15px;
-  background-position-y: center;
-  background-size: 25px;
 }
 
 .forget-pwd {
@@ -103,4 +93,6 @@ a:link {
   color: #5fc0cd;
   text-decoration: none;
 }
+
+/* 去除链接下划线、改变链接颜色  */
 /*# sourceMappingURL=main.css.map */

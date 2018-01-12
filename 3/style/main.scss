@@ -1,8 +1,8 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-body{
+body {
     width: 100%;
     height: 100%;
     background-color:#eff0f4;
@@ -10,7 +10,7 @@ body{
 
 
 /* header 登录顶部  */
-.login-header{
+.login-header {
     position: relative;
     width: 100%;
     height: 45px;
@@ -19,45 +19,42 @@ body{
     font-size: 15px;
     background: #5fc0cd;
     color: #fff;
-}
 
-.head{
-    margin: 0;
-    text-align: center;
-    font-size: 18px;
-}
+    > .head {
+        margin: 0;
+        text-align: center;
+        font-size: 18px;
+    }
 
-.register{
-    position: absolute;
-    left: 15px;
+    > .register {
+        position: absolute;
+        left: 15px;
+    }
+    
+    > .close {
+        position: absolute;
+        top: 0;
+        right: 15px;
+    }
 }
-
-.close{
-    position: absolute;
-    top: 0;
-    right: 15px;
-}
-
 
 /* header 登录顶部-结束  */
 
-/* main  */
-.login-username{
+/* main 输入框 */
+.login-username {
     position: relative;
     padding-left: 50px;
     outline-color: #fff;
     outline-width: 0; 
 }
 
-.login-password{
-    position: relative;
-    margin-top: 10px;
-    padding-left: 50px; 
-    outline-color: #fff;
-    outline-width: 0; 
+.login-password {
+    @extend .login-username;
+    margin-top: 10px; 
 }
+/* main 输入框-结束 */
 
-.login-submit{
+.login-submit {
     display: inline-block;
     padding: 0; 
     width: 100%;
@@ -72,7 +69,7 @@ body{
 }
 /* 登陆按钮  */
 
-.icon-phone{  
+.icon-phone {  
     width:100%; 
     height:45px;
     border:0px;
@@ -83,25 +80,22 @@ body{
     background-size: 25px;
 }
 
-.icon-pwd{
-    width:100%; 
-    height:45px;
-    border:0px;
+.icon-pwd {  
+    @extend .icon-phone;  
     background-image:url(../image/locked2.png);
-    background-repeat: no-repeat;
-    background-position-x: 15px;
-    background-position-y: center;
-    background-size: 25px;
 }
 
-.forget-pwd{
+.forget-pwd {
     text-align: right;
     line-height: 20px;
     font-size: 15px;
     color: #5fc0cd;
 }
 
-a:link {
+a {
+    &:link{
     color: #5fc0cd ;
     text-decoration: none;
+    }
 }
+/* 去除链接下划线、改变链接颜色  */
