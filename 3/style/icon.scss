@@ -1,0 +1,15 @@
+.icon-phone {  
+    width:100%; 
+    height:45px;
+    border:0px;
+    background-image:url(../image/iphone.png);
+    background-repeat: no-repeat;
+    background-position-x: 15px;
+    background-position-y: center;
+    background-size: 25px;
+}
+
+.icon-pwd {  
+    @extend .icon-phone;  
+    background-image:url(../image/locked2.png);
+}

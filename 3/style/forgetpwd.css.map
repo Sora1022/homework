@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": ";AAAA,AAAA,WAAW,CAAC;EACR,UAAU,EAAE,KAAK;EACjB,WAAW,EAAE,IAAI;EACjB,SAAS,EAAE,IAAI;EACf,KAAK,EAAE,OAAO;CACjB;;AAED,AACI,CADH,AACG,KAAM,CAAA;EACN,KAAK,EAAE,OAAQ;EACf,eAAe,EAAE,IAAI;CACpB;;AAEL,iDAAiD",
+    "sources": [
+        "forgetpwd.scss"
+    ],
+    "names": [],
+    "file": "forgetpwd.css"
+}
