@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": ";AAAA,AAAA,aAAa,CAAC;EACV,OAAO,EAAE,YAAY;EACrB,OAAO,EAAE,CAAC;EACV,KAAK,EAAE,IAAI;EACX,UAAU,EAAE,IAAI;EAChB,UAAU,EAAE,MAAM;EAClB,WAAW,EAAE,IAAI;EACjB,SAAS,EAAE,IAAI;EACf,UAAU,EAAE,OAAO;EACnB,KAAK,EAAE,IAAI;EACX,YAAY,EAAE,CAAC;EACf,cAAc,EAAE,GAAG;CACtB;;AACD,mBAAmB",
-    "sources": [
-        "loginbutton.scss"
-    ],
-    "names": [],
-    "file": "loginbutton.css"
-}

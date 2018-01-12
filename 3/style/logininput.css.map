@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": ";AAAA,oBAAoB;AACpB,AAAA,eAAe,EAOf,AAPA,eAOe,CAPC;EACZ,QAAQ,EAAE,QAAQ;EAClB,YAAY,EAAE,IAAI;EAClB,aAAa,EAAE,IAAI;EACnB,aAAa,EAAE,CAAC;CACnB;;AAED,AAAA,eAAe,CAAC;EAEZ,UAAU,EAAE,IAAI;CACnB;;AACD,2BAA2B",
-    "sources": [
-        "logininput.scss"
-    ],
-    "names": [],
-    "file": "logininput.css"
-}
