@@ -1,99 +1,81 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.head .back,.head .title{
-    vertical-align:middle
+/* header-开始 */
+.website-header {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 15px;
+  background: #91d4da;
+  color: #fff;
 }
 
-.navbar ul li,li,ol{
-    list-style:none
+.website-header > .goback {
+  position: absolute;
+  top: 10px;
+  border: 10px solid transparent;
+  border-right: 10px solid #fff;
 }
 
-html,body{
-    width: 100%;
+.website-header .goback:hover {
+  border-right: 10px solid #fff;
 }
 
-.clearfix:before,.clearfix:after {
-        content:"";
-        display:table;
-        }
+.website-header .goback:after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -7px;
+  border: 10px solid transparent;
+  border-right: 10px solid #91d4da;
+}
 
-.clearfix:after { clear:both; }
-    
-.clearfix{
-        *zoom: 1;
-    }
+.website-header > .header-back {
+  position: absolute;
+  left: 25px;
+}
 
-/* 头部  */
-.header {
-    height: 44px;
-    background-color: #91d4da;
-    font-size: 18px;
-    text-align: center;
-    line-height: 44px;
-    color:#fff;
-    font-weight: bold;
-} 
+.website-header > .header-title {
+  text-align: center;
+}
 
-.back {
-      vertical-align:middle;
-      position: absolute;
-    }
-  
-.title {
-      vertical-align:middle;
-    }
+/* header-结束 */
+/* 顶部导航栏-开始 */
+.nav-ul {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 15px;
+  color: #000;
+}
 
+.nav-ul > .nav-li {
+  float: left;
+  display: block;
+  padding: 0 1rem;
+}
 
-/*  导航栏 */
-.nav{
-        height: 44px;
-        background-color: #fff;
-        font-size: 18px;
-        text-align: center;
-        line-height: 44px;
-        font-weight: bold;
-    }
+.nav-ul > .nav-li a {
+  color: #666;
+  text-decoration: none;
+}
 
-.nav{
-        background-color:#fff
-    }
-    
-.nav ul li{
-        width:20%;
-        float:left
-    }
-    
-.nav ul li a{
-        text-decoration:none;
-        color:#6e6e6e
-    }
-    
-.nav ul .active{
-        border-bottom:.14286rem solid #91d4da
-    }
-    
-.li {
-        width: 20%;
-        float: left;
-        list-style: none;
-    }
+.nav-ul > .special-border {
+  border-bottom: 2px solid #91d4da;
+}
 
-.a {
-        text-decoration: none;
-        color:#6e6e6e;
-    }
-
-.active {
-            border-bottom: 2px solid #91d4da;
-          }
-            
-/* 大海报  */
+/* 顶部导航栏-结束 */
 .post {
-      height: 206px;
-      width: 100%;
-    }
-
+  position: relative;
+  height: 180px;
+  width: 100%;
+  text-align: center;
+}
+/*# sourceMappingURL=webset.css.map */
