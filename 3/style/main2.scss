@@ -55,7 +55,8 @@
     > .nav-li {
         float: left;
         display: block;
-        padding: 0 1rem;
+        width: 20%;
+        text-align: center;
     }
 
     > .nav-li a {
@@ -69,9 +70,35 @@
 }
 /* 顶部导航栏-结束 */
 
-.post {
-    position: relative;
-    height: 180px;
+.postbox{
+    position: absolute;
+    height: 100%;
     width: 100%;
-    text-align: center;
+    overflow: hidden;
+    transform: translateY(2px);
+
+    > .post {
+        position: absolute;
+        height: auto;
+        width: 100%;
     }
+}
+
+
+.clearfix:after{
+    display: inline-block;
+    content: "";
+    overflow: hidden;
+    clear: both;
+}
+
+.clearfix:before,.clearfix:after {
+    content:"";
+    display:table;
+    }
+
+.clearfix:after { clear:both; }
+
+.clearfix{
+    *zoom: 1;
+}
