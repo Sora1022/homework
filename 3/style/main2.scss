@@ -14,23 +14,27 @@
     background: #91d4da;
     color: #fff;
 
-    > .goback {
-        position: absolute;
-        top: 10px; 
-        border: 10px solid transparent;
-        border-right: 10px solid #fff;
-    }
-      .goback:hover {
+    > p:hover {
           border-right: 10px solid #fff;
         }
 
-      .goback:after {
+      p:after {
           content: '';
           position: absolute;
-          top: -10px; left: -7px;
+          top: 10px; left: -22px;
           border: 10px solid transparent;
           border-right: 10px solid #91d4da;
         }
+
+      p:before {
+          content: '';
+          position: absolute;
+          top: 10px; left: -24px;
+          border: 10px solid transparent;
+          border-right: 10px solid #fff;
+        }
+        
+  
 
     > .header-back {
         position: absolute;

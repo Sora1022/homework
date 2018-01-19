@@ -16,24 +16,26 @@
   color: #fff;
 }
 
-.website-header > .goback {
-  position: absolute;
-  top: 10px;
-  border: 10px solid transparent;
+.website-header > p:hover {
   border-right: 10px solid #fff;
 }
 
-.website-header .goback:hover {
-  border-right: 10px solid #fff;
-}
-
-.website-header .goback:after {
+.website-header p:after {
   content: '';
   position: absolute;
-  top: -10px;
-  left: -7px;
+  top: 10px;
+  left: -22px;
   border: 10px solid transparent;
   border-right: 10px solid #91d4da;
+}
+
+.website-header p:before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: -24px;
+  border: 10px solid transparent;
+  border-right: 10px solid #fff;
 }
 
 .website-header > .header-back {
