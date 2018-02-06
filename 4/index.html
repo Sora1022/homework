@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
+    /* 输入框-开始 */
     input {
         width: 100px;
         transition: width 0.5s;
@@ -15,56 +16,82 @@
         transform: translateX(0px);
         border: 2px solid rgb(78, 145, 221);
     }
+    /* 输入框-结束 */
 
+    /* 表单-开始 */
     .form {
         table-layout: fixed;
         width: 300px;
         text-align: center;
     }
 
+    table tr:nth-child(odd) {
+        background-color: lightgray;
+    }
+
+    table tr:nth-child(-n+4) {
+        color: red;
+    }
+
     table tr:first-child {
         color: white;
         background-color: black;
     }
-    table tr:nth-child(2) {
-        color: red;
-    }
-    table tr:nth-child(3) {
-        color: red;
-        background-color: lightgray;
-    }
-    table tr:nth-child(4) {
-        color: red;
-    }
-    table tr:nth-child(5) {
-        background-color: lightgray;
-    }
-    table tr:nth-last-child(4) {
-        background-color: lightgray;
-    }
-    table tr:nth-last-child(2) {
-        background-color: lightgray;
-    }
-    
+    /* 表单-结束 */
+
+    /* 悬停按钮-开始 */
     .form-login {
         position: absolute;
-        width: 412px;
+        width: 390px;
         height: 100px;
         background-image: url(image/big2.jpg);
     }
 
-    img:hover {
-        background-image:  url(image/btnhover.png);
+    .btn{
+        float: left;
+        position: relative;
+        width: 120px;
+        height: 60px;
+        border-radius: 10%;
+        border: 0 #041c38;
+        background-color: #041c38;
     }
 
+    .btn-login_margin {
+        margin-left: 15px;
+    }
+
+    .btn-background {
+        position: absolute;
+        left: 0;
+    }
+
+    div button:nth-of-type(1):hover {
+        background-image:  url(image/btnhover.png);
+        background-position: 0% 0%;
+    }
+
+    div button:nth-of-type(2):hover {
+        background-image:  url(image/btnhover.png);
+        background-position: 50% 0%;
+    }
+
+    div button:nth-of-type(3):hover {
+        background-image:  url(image/btnhover.png);
+        background-position: 100% 0%;
+    }
+    /* 悬停按钮-结束 */
+
+    /* 动画-开始 */
     .gif {
         position: absolute;
         top: 400px;
-        width: 200px;
+        width: 180px;
         height: 300px;
-        background-image: url(image/character.png);
-        animation:anim-name 2s infinite;
+        background: url(image/character.png) 0 0 no-repeat;
+        animation:anim-name 1s steps(7) infinite;
     }
+    
     @keyframes anim-name {
         0% {background-position: 0 0;}
         14.3% {background-position: -180px 0;}
@@ -75,6 +102,11 @@
         85.8% {background-position: -1080px 0;}
         100% {background-position: 0 0;}
     }
+
+    #gif-start { 
+        animation-timing-function: step-start; 
+    }
+    /* 动画-结束 */
     </style>
 </head>
 <body>
@@ -132,10 +164,12 @@
         </tr>
     </table>
     <div class="form-login">
-        <img src="image/btn.png">
+        <button class="btn"></button>
+        <button class="btn btn-login_margin"></button>
+        <button class="btn btn-login_margin"></button>
+        <img src="image/btn.png" class="btn-background">
     </div>
-    <div class="gif">
-
+    <div class="gif" id="gif-start">
     </div>
 </body>
 </html>
