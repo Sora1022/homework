@@ -51,7 +51,7 @@
         float: left;
         position: relative;
         width: 120px;
-        height: 60px;
+        height: 65px;
         border-radius: 10%;
         border: 0 #041c38;
         background-color: #041c38;
@@ -61,24 +61,28 @@
         margin-left: 15px;
     }
 
-    .btn-background {
-        position: absolute;
-        left: 0;
+    .btn1 {
+        background:  url(image/btn.png)  0 0;
     }
 
-    div button:nth-of-type(1):hover {
-        background-image:  url(image/btnhover.png);
-        background-position: 0% 0%;
+    .btn2 {
+        background:  url(image/btn.png)  120px 0;
     }
 
-    div button:nth-of-type(2):hover {
-        background-image:  url(image/btnhover.png);
-        background-position: 50% 0%;
+    .btn3 {
+        background:  url(image/btn.png)  255px 0;
     }
 
-    div button:nth-of-type(3):hover {
-        background-image:  url(image/btnhover.png);
-        background-position: 100% 0%;
+    div :nth-child(1):hover {
+        background: url(image/btnhover.png) 0 0;
+    }
+
+    div :nth-child(2):hover {
+        background: url(image/btnhover.png) 120px 0;
+    }
+    
+    div :nth-child(3):hover {
+        background: url(image/btnhover.png) 255px 0;
     }
     /* 悬停按钮-结束 */
 
@@ -164,10 +168,9 @@
         </tr>
     </table>
     <div class="form-login">
-        <button class="btn"></button>
-        <button class="btn btn-login_margin"></button>
-        <button class="btn btn-login_margin"></button>
-        <img src="image/btn.png" class="btn-background">
+        <button class="btn btn1"></button>
+        <button class="btn btn2 btn-login_margin"></button>
+        <button class="btn btn3 btn-login_margin"></button>
     </div>
     <div class="gif" id="gif-start">
     </div>
