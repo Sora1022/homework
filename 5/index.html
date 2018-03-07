@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .grid-container{
+        width: 100%; 
+        max-width: 1200px;      
+    }
+
+    .row:before, .row:after {
+        content:"";
+        display: table ;
+        clear:both;
+    }
+
+    [class*='col-'] {
+        float: left; 
+        height: 50px; 
+        width: 16.66%; 
+        margin-top: 1.66667%; 
+        margin-left: 1.66667%; 
+        text-align: center; 
+        background-color: #eee;
+        color: red; 
+        outline: 1px solid blue;
+    }
+
+    @media all and (max-width:768px){
+        .col-1{ width: 47.499995%; }
+        .col-2{ width: 47.499995%; }
+        .col-3{ width: 96.66666%; }
+        .col-4{ width: 23.33334%; }
+        .col-5{ width: 46.66668%; }
+        .col-6{ width: 23.33334%; }
+        .col-7{ width: 15.55556%; }
+        .col-8{ width: 15.55556%; }
+        .col-9{ width: 62.22224%; }
+        .col-10{ width: 23.33334%; }
+        .col-11{ width: 23.33334%; }
+    }
+
+    @media all and (min-width:769px){
+        .col-1{ width: 31.1111%;  }
+        .col-2{ width: 31.1111%; }
+        .col-3{ width: 31.1111%; }
+        .col-4{ width: 23.33334%; }
+        .col-5{ width: 46.66668%; }
+        .col-6{ width: 23.33334%; }
+        .col-7{ width: 7.499998%; }
+        .col-8{ width: 7.499998%; }
+        .col-9{ width: 14.999996%; }
+        .col-10{ width: 14.999996%; }
+        .col-11{ width: 44.999988%; }
+    }
+
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="row">
+            <div class="col-1"><p>col-1</p></div> 
+            <div class="col-2"><p>col-2</p></div> 
+            <div class="col-3"><p>col-3</p></div> 
+            <div class="col-4"><p>col-4</p></div> 
+            <div class="col-5"><p>col-5</p></div> 
+            <div class="col-6"><p>col-6</p></div>
+            <div class="col-7"><p>col-7</p></div> 
+            <div class="col-8"><p>col-8</p></div> 
+            <div class="col-9"><p>col-9</p></div> 
+            <div class="col-10"><p>col-10</p></div> 
+            <div class="col-11"><p>col-11</p></div> 
+        </div> 
+    </div>
+
+<hr/>
+</body>
+</html>
