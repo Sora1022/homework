@@ -6,56 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-        html,body {
-            width: 100%;
-            height: 100%;
-        }
-
         input {
-        width: 100px;
-        transition: width 0.5s;
+            float:left;
+            width: 100px;
+            transition: width 0.5s;
     }
         input:hover {
         width: 300px;
         transform: translateX(0px);
         border: 2px solid rgb(78, 145, 221);
     }
-        .box1 {
-            float: left;
-            width: auto;
-            height: 100%;
-            background-color: red;          
-        }
-        .box2 {
-            width: 400px;
-            height: 100%;
-            background-color: blue;
-        }
-
-        .box3 {
-            position: absolute;
-            right:1px;
-            width: 570px;
-            height: 100%;
-            background-color: green;
-        }
 
         /* 表单-开始 */
     .form {
+        float:left;
         table-layout: fixed;
         width: 300px;
         text-align: center;
     }
 
-    div tr:nth-child(odd) {
+    table tr:nth-child(odd) {
         background-color: lightgray;
     }
 
-    div tr:nth-child(-n+4) {
+    table tr:nth-child(-n+4) {
         color: red;
     }
 
-    div tr:first-child {
+    table tr:first-child {
         color: white;
         background-color: black;
     }
@@ -63,7 +41,7 @@
 
     /* 悬停按钮-开始 */
     .form-login {
-        position: absolute;
+        float:left;
         width: 390px;
         height: 100px;
         background-image: url(image/big2.jpg);
@@ -95,23 +73,22 @@
         background:  url(image/btn.png)  255px 0;
     }
 
-    span :nth-child(1):hover {
+    div :nth-child(1):hover {
         background: url(image/btnhover.png) 0 0;
     }
 
-    span :nth-child(2):hover {
-        background: url(image/btnhover.png) 120px 0;
+    div :nth-child(2):hover {
+        background: url(image/btnhover.png) 121px 0;
     }
     
-    span :nth-child(3):hover {
+    div :nth-child(3):hover {
         background: url(image/btnhover.png) 255px 0;
     }
     /* 悬停按钮-结束 */
 
     /* 动画-开始 */
     .gif {
-        position: absolute;
-        top: 400px;
+        float:left;
         width: 180px;
         height: 300px;
         background: url(image/character.png) 0 0 no-repeat;
@@ -154,6 +131,64 @@
     </style>
 </head>
 <body>
+        <input type="text" id="btn" value="">
+        <table class="form">
+            <tr>
+                <th>名次</th>
+                <th>姓名</th>
+                <th>积分</th>
+            </tr>
+            <tr>
+                <td>1.</td>
+                <td>冠军</td>
+                <td>446</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>亚军</td>
+                <td>223</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>季军</td>
+                <td>112</td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>xxx</td>
+                <td>77</td>
+            </tr>
+            <tr>
+                <td>5.</td>
+                <td>xxx</td>
+                <td>66</td>
+            </tr>
+            <tr>
+                <td>6.</td>
+                <td>xxxx</td>
+                <td>55</td>
+            </tr>
+            <tr>
+                <td>7.</td>
+                <td>xxx</td>
+                <td>44</td>
+            </tr>
+            <tr>
+                <td>8.</td>
+                <td>xx</td>
+                <td>33</td>
+            </tr>
+            <tr>
+                <td>9.</td>
+                <td>xxxx</td>
+                <td>12</td>
+             </tr>
+        </table>
+    <div class="form-login">
+        <button class="btn btn1"></button>
+        <button class="btn btn2 btn-login_margin"></button>
+        <button class="btn btn3 btn-login_margin"></button>
+    </div>
         <div class="gif" id="gif-start">
             </div>
 </body>
