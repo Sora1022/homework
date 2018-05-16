@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="style/normalize.css">
     <link rel="stylesheet" type="text/css" href="style/iconfont.css">
     <style>
         .top {
-            width:1300px;
+            width:1440px;
             background-image: url(image/bgp1.png); 
             background-size: 100%;
             background-repeat: no-repeat;
@@ -16,6 +17,7 @@
         }
 
         .leftpic {
+            margin-top: 30px;
             margin-left:150px;
         }
 
@@ -25,8 +27,8 @@
         }
 
         .exp {
-            color:black;
-            font-size: 1px;
+            margin-top: 70px;
+            margin-bottom: 20px;
         }
 
         button {
@@ -36,26 +38,28 @@
         /* 头部结束 */
 
         .middletitle {
-            margin-left: -180px;
+            margin-top: 80px;
+            margin-bottom: 80px;
+            margin-left: -70px;
             text-align: center;
         }
 
         .middlepart {
             float: left;
-            width: 433.33px;
+            width: 32%;
             text-align: center;
         }
 
-        .paragraph {
-            color:grey;
+        .middlepara {
+            margin-top: 20px;
         }
         /* 产品介绍结束 */
 
         .middle-bgp {
             position: relative;
-            width:1300px;
+            width:1440px;
             height: 487px;
-            margin-top: 260px;
+            margin-top: 100px;
             background-image: url(image/bgp2.png); 
             background-size: 100%;
             background-repeat: no-repeat;
@@ -93,14 +97,15 @@
         }
 
         .middle-title {
+            margin-bottom: 20px;
             margin-left: -180px;
             text-align: center;
         }
 
         .middle-tip {
             float: left;
-            margin-left: 30px;
-            width: 600px;
+            margin-left: 5%;
+            width: 40%;
         }
 
         .middle-square {
@@ -112,73 +117,57 @@
             border: 1px;
         }
 
-        .square1 {
-            background-color:  #308AA4;
+        .middle-para {
+            margin-top: 30px;
         }
 
-        .square2 {
-            background-color: #B88CCf;
+        .clearfix:after {
+            display: inline-block;
+            content: "";
+            overflow: hidden;
+            clear: both;
         }
 
-        .square3 {
-            background-color: #6A8E4E;
-        }
-        
-        .square4 {
-            background-color: #AB5E56;
+        .clearfix:before, .clearfix:after {
+            content: "";
+            display: table;
         }
 
-        .square5 {
-            background-color: #B26826;
-        }
-
-        .square6 {
-            background-color: #4A8B87;
+        .clearfix:after {
+            clear: both;
         }
     </style>
 </head>
 <body>
-    <div class="top">       
+    <div class="top clearfix">       
         <div class="nav">
-            <h3>LIFETRACKR</h3>
-            <p>Being Productive.</p>
-            <p>Manage Your Life Day to Day</p>
-            <p class="exp"><strong>your track everything in your life with a simple way</strong></p>
+            <div><img src="image/LIFETRACKR.png"></div>
+            <div class="exp"><img src="image/a1.png"></div>
             <button><img src="image/apple.png" href="https://www.apple.com/cn"></button>
             <button><img src="image/google.png" href="https://google.com.pe"></button>
         </div>
         <div class="leftpic"><img src="image/hand.png"></div>
     </div>
-    <div>
+    <div class="clearfix">
         <div class="middletitle">
-            <h2>Useful Tool For Your Life</h2>
-            <p class="paragraph">Our platform is used for help people to reach their success day by day</p>
+            <div class="middlepara"><img src="image/a2.png"></div>
         </div>
         <div>
             <div class="middlepart">
                 <i class="iconfont icon-rili"></i>
-                <h3>Daily Based</h3>
-                <p class="paragraph">Lorem lpsum is simply dummy text of priting
-                and typesetting industry.Lorem lpsum has been
-                typesetting industry</p>
+                <div class="middlepara"><img src="image/a3.png"></div>
             </div>
             <div class="middlepart">
                 <i class="iconfont icon-shizhong"></i>
-                <h3>Timeline &amp Milestone</h3>
-                <p class="paragraph">Lorem lpsum is simply dummy text of priting
-                and typesetting industry.Lorem lpsum has been
-                typesetting industry</p>
+                <div class="middlepara"><img src="image/a4.png"></div>
             </div>
             <div class="middlepart">
                 <i class="iconfont icon-cansaiduixiangren"></i>
-                <h3>Community Support</h3>
-                <p class="paragraph">Lorem lpsum is simply dummy text of priting
-                and typesetting industry.Lorem lpsum has been
-                typesetting industry</p>
+                <div class="middlepara"><img src="image/a5.png"></div>
             </div>
         </div>
     </div>
-    <div>
+    <div class="clearfix">
         <div class="middle-bgp">
             <div><img src="image/middle.png" class="middle-phone"></div>
             <div><img src="image/left.png" class="left-phone"></div>
@@ -186,39 +175,32 @@
         </div>
         <div class="middle-paragraph">
             <div class="middle-title">
-                    <h2>Helping People To Get a Better Life</h2>
-                    <p class="paragraph">Every people is deserved to have a better living</p>
+                <div><img src="image/a6.png"></div>
             </div>
             <div>
                 <div class="middle-tip">
-                    <div class="middle-square square1"><i class="iconfont icon-naozhong"></i></div>
-                    <h4>Time Management</h4>
-                    <p>Start form now,you can easily manage your time and it has reminder to let you know every time.</p>
+                    <div class="middle-square"><img src="image/1.png"></div>
+                    <div class="middle-para"><img src="image/a7.png"></div>
                 </div>
                 <div class="middle-tip">
-                    <div class="middle-square square2"><i class="iconfont icon-taolun"></i></div>
-                    <h4>Chat &amp Message</h4>
-                    <p>Start form now,you can easily manage your time and it has reminder to let you know every time.</p>
+                    <div class="middle-square"><img src="image/2.png"></div>
+                    <div class="middle-para"><img src="image/a8.png"></div>
                 </div>
                 <div class="middle-tip">
-                    <div class="middle-square square3"><i class="iconfont icon-shujutu"></i></div>
-                    <h4>Stats Overview</h4>
-                    <p>Start form now,you can easily manage your time and it has reminder to let you know every time.</p>
+                    <div class="middle-square"><img src="image/3.png"></div>
+                    <div class="middle-para"><img src="image/a9.png"></div>
                 </div>
                 <div class="middle-tip">
-                    <div class="middle-square square4"><i class="iconfont icon-cansaiduixiangren"></i></div>
-                    <h4>Compete Friends</h4>
-                    <p>Start form now,you can easily manage your time and it has reminder to let you know every time.</p>
+                    <div class="middle-square"><img src="image/4.png"></div>
+                    <div class="middle-para"><img src="image/a10.png"></div>
                 </div>
                 <div class="middle-tip">
-                    <div class="middle-square square5"><i class="iconfont icon-jiushengquanlifebelt"></i></div>
-                    <h4>Community Helps &amp Supports</h4>
-                    <p>Start form now,you can easily manage your time and it has reminder to let you know every time.</p>
+                    <div class="middle-square"><img src="image/5.png"></div>
+                    <div class="middle-para"><img src="image/a11.png"></div>
                 </div>
                 <div class="middle-tip">
-                    <div class="middle-square square6"><i class="iconfont icon-icon-test"></i></div>
-                    <h4>Documentation</h4>
-                    <p>Start form now,you can easily manage your time and it has reminder to let you know every time.</p>
+                    <div class="middle-square"><img src="image/6.png"></div>
+                    <div class="middle-para"><img src="image/a12.png"></div>
                 </div>
             </div>
         </div>
