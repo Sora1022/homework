@@ -166,6 +166,10 @@
   margin-left: 28px;
 }
 
+.summary-box {
+  width: 100%;
+}
+
 .summary-picture {
   float: left;
   height: 225px;
@@ -200,7 +204,7 @@
 
 .hot-title {
   float: left;
-  width: 75%;
+  width: 65%;
   margin-top: 29px;
   margin-bottom: 27px;
   margin-left: 30px;

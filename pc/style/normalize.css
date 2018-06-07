@@ -17,6 +17,11 @@ body {
 }
 
 
+p {
+    -webkit-margin-before: 1rem;
+    -webkit-margin-after: 0rem;
+}
+
 /* 添加在ie9中margin的正确显示 */
 
 figure {

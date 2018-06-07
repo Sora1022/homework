@@ -17,13 +17,38 @@
         }
 
         .leftpic {
-            margin-top: 30px;
+            margin-top: 70px;
             margin-left:150px;
         }
 
         .nav {
+
+            
             margin: 100px 300px 200px 50px;
             float: right;
+        }
+
+        .top-title {
+            color: white;
+            font-family: OpenSans CondensedBold;
+            font-size: 40px;
+            font-weight: bold;
+            font-stretch: ultra-condensed;
+        }
+
+        .top-paragraph {
+            color: white;
+            font-weight: 100;
+            font-family: Lato Light;
+            font-size: 28px;
+        }
+
+        .top-text {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            color: black;
+            font-family: HelveticalNeue Medium;
+            font-size: 10px;
         }
 
         .exp {
@@ -52,6 +77,12 @@
 
         .middlepara {
             margin-top: 20px;
+            font-family: Lato Light;
+            font-size: 25px;
+        }
+
+        .middlearticle {
+            color: grey;
         }
         /* 产品介绍结束 */
 
@@ -69,56 +100,73 @@
         .left-phone {
             position:absolute;
             margin-top: 150px;
-            margin-left: 300px;
+            margin-left: 350px;
             z-index:90;
         }
 
         .right-phone {
             position:absolute;
             margin-top: 150px;
-            margin-left: 750px;
+            margin-left: 800px;
             z-index:90;
         }
 
         .middle-phone {
             position:absolute;
             margin-top: 100px;
-            margin-left: 500px;
+            margin-left: 550px;
             z-index:100;
         }
         /*中间部分结束*/
 
         .middle-paragraph {
+            width: 100%;
             margin-top: 350px;
         }
 
         .middle-paragraph p {
+            float: left;
+            font-family: Loat Light;
+        }
+
+        .middle-summary {
             color: grey;
         }
 
+        .special-title {
+            font-size: 25px;
+        }
+
         .middle-title {
+            width: 100%;
             margin-bottom: 20px;
-            margin-left: -180px;
             text-align: center;
+            font-family: Lato Light;
+        }
+
+        .summary-box {
+            width: 100%;
         }
 
         .middle-tip {
             float: left;
             margin-left: 5%;
-            width: 40%;
+            width: 45%;
         }
 
         .middle-square {
             float: left;
             width: 70px;
             height: 70px;
-            margin-top: 30px;
-            margin-right: 20px;
+            margin-top: 20px;
+            margin-right: 5px;
             border: 1px;
         }
 
         .middle-para {
-            margin-top: 30px;
+            float:left;
+            width: 80%;
+            margin-top: 15px;
         }
 
         .clearfix:after {
@@ -141,8 +189,9 @@
 <body>
     <div class="top clearfix">       
         <div class="nav">
-            <div><img src="image/LIFETRACKR.png"></div>
-            <div class="exp"><img src="image/a1.png"></div>
+            <p class="top-title">LIFETRACKR</p>
+            <p class="top-paragraph">Being Productive.<br>Manage Your Life Day to Day.</p>
+            <p class="top-text"><strong>Let you track everything in your life with a simple way.</strong></p>
             <button><img src="image/apple.png" href="https://www.apple.com/cn"></button>
             <button><img src="image/google.png" href="https://google.com.pe"></button>
         </div>
@@ -150,20 +199,27 @@
     </div>
     <div class="clearfix">
         <div class="middletitle">
-            <div class="middlepara"><img src="image/a2.png"></div>
+            <p class="middlepara">Useful Tools For Your Life</p>
+            <p class="middlearticle">Our platform is used for help people to reach their success day by day</p>
         </div>
         <div>
             <div class="middlepart">
                 <i class="iconfont icon-rili"></i>
-                <div class="middlepara"><img src="image/a3.png"></div>
+                <div class="middlepara">Daily Based</div>
+                <p class="middlearticle">Lorem lpsum is simply dummy text of printing</br>and typesetting industry
+                .Lorem lpsum is simply dummy text of printing</p>
             </div>
             <div class="middlepart">
                 <i class="iconfont icon-shizhong"></i>
-                <div class="middlepara"><img src="image/a4.png"></div>
+                <div class="middlepara">Timeline &amp Milestone</div>
+                <p class="middlearticle">Lorem lpsum is simply dummy text of printing</br>and typesetting industry
+                    .Lorem lpsum is simply dummy text of printing</p>
             </div>
             <div class="middlepart">
                 <i class="iconfont icon-cansaiduixiangren"></i>
-                <div class="middlepara"><img src="image/a5.png"></div>
+                <div class="middlepara">Community Support</div>
+                <p class="middlearticle">Lorem lpsum is simply dummy text of printing</br>and typesetting industry
+                    .Lorem lpsum is simply dummy text of printing</p>
             </div>
         </div>
     </div>
@@ -175,32 +231,45 @@
         </div>
         <div class="middle-paragraph">
             <div class="middle-title">
-                <div><img src="image/a6.png"></div>
+                <div class="special-title">Helping People To Get a Better Life</div>
+                <div class="middle-summary">Every people is deserved to have a better living</div>
             </div>
-            <div>
+            <div class="summary-box">
                 <div class="middle-tip">
                     <div class="middle-square"><img src="image/1.png"></div>
-                    <div class="middle-para"><img src="image/a7.png"></div>
+                    <strong><p>Time Management</p></strong>
+                    <p class="middle-para middle-summary">Start from now,you can easily manage
+                    your time and it has reminder to let you konw every time.</p>
                 </div>
                 <div class="middle-tip">
                     <div class="middle-square"><img src="image/2.png"></div>
-                    <div class="middle-para"><img src="image/a8.png"></div>
+                    <strong><p>Chat &amp Messege</p></strong>
+                    <p class="middle-para middle-summary">Start from now,you can easily manage
+                        your time and it has reminder to let you konw every time.</p>
                 </div>
                 <div class="middle-tip">
                     <div class="middle-square"><img src="image/3.png"></div>
-                    <div class="middle-para"><img src="image/a9.png"></div>
+                    <strong><p>States Overview</p></strong>
+                    <p class="middle-para middle-summary">Start from now,you can easily manage
+                        your time and it has reminder to let you konw every time.</p>
                 </div>
                 <div class="middle-tip">
                     <div class="middle-square"><img src="image/4.png"></div>
-                    <div class="middle-para"><img src="image/a10.png"></div>
+                    <strong><p>Comepete Friends</p></strong>
+                    <p class="middle-para middle-summary">Start from now,you can easily manage
+                        your time and it has reminder to let you konw every time.</p>
                 </div>
                 <div class="middle-tip">
                     <div class="middle-square"><img src="image/5.png"></div>
-                    <div class="middle-para"><img src="image/a11.png"></div>
+                    <strong><p>Communicity Helps &amp Supports</p></strong>
+                    <p class="middle-para middle-summary">Start from now,you can easily manage
+                        your time and it has reminder to let you konw every time.</p>
                 </div>
                 <div class="middle-tip">
                     <div class="middle-square"><img src="image/6.png"></div>
-                    <div class="middle-para"><img src="image/a12.png"></div>
+                    <strong><p>Documentation</p></strong>
+                    <p class="middle-para middle-summary">Start from now,you can easily manage
+                        your time and it has reminder to let you konw every time.</p>
                 </div>
             </div>
         </div>

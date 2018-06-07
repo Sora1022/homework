@@ -35,7 +35,6 @@
         }
         
   
-
     > .header-back {
         position: absolute;
         left: 25px;
@@ -163,6 +162,10 @@
         margin-left: 28px;
     }
 
+    .summary-box {
+        width: 100%;
+    }
+
     .summary-picture {
         float: left;
         height: 225px;
@@ -197,7 +200,7 @@
 
     .hot-title {
         float:left;
-        width: 75%;
+        width: 65%;
         margin-top: 29px;
         margin-bottom: 27px;
         margin-left: 30px;
@@ -245,4 +248,5 @@
         font-size: 1.5rem;
         color: #868686;
     }
+
     /* 底部新闻-结束 */
