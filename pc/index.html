@@ -9,7 +9,6 @@
     <link rel="stylesheet" type="text/css" href="style/iconfont.css">
     <style>
         .top {
-            width:1440px;
             background-image: url(image/bgp1.png); 
             background-size: 100%;
             background-repeat: no-repeat;
@@ -65,13 +64,13 @@
         .middletitle {
             margin-top: 80px;
             margin-bottom: 80px;
-            margin-left: -70px;
+            margin-left: -80px;
             text-align: center;
         }
 
         .middlepart {
             float: left;
-            width: 32%;
+            width: 33.33%;
             text-align: center;
         }
 
@@ -88,7 +87,7 @@
 
         .middle-bgp {
             position: relative;
-            width:1440px;
+            width:100%;
             height: 487px;
             margin-top: 100px;
             background-image: url(image/bgp2.png); 
@@ -186,21 +185,20 @@
         }
 
         /* 轮播图-开始 */
-        img { border: 0; vertical-align: top; }
         ul, li { list-style: none; }
 
         .shutter {
         overflow: hidden;
-        width: 1000px;
-        height: 358px;
+        width: 850px;
+        height: 450px;
         position: relative;
         margin: 50px auto;
         border-radius: 10px;
-    }
-
+  
+        }
         .shutter-img {
         z-index: 1;
-    }
+        }
         .shutter-img,
         .shutter-img a {
         position: absolute;
@@ -208,19 +206,19 @@
         top: 0;
         width: 100%;
         height: 100%;
-    }
+        }
         .shutter-img a {
         cursor: default;
-    }
+        }
         .shutter-img a > img {
         width: 100%;
         height: 100%;
-    }
+        }
         .shutter-img .created {
         overflow: hidden;
         position: absolute;
         z-index: 20;
-    }
+        }
         .shutter-btn {}
         .shutter-btn li {
         position: absolute;
@@ -230,15 +228,15 @@
         height: 49px;
         margin-top: -25px;
         cursor: pointer;
-    }
+        }
         .shutter-btn li.prev {
         left: 20px;
-        background: url(../image/shutter_prevBtn.png) no-repeat 0 -49px;
-    }
+        background: url(image/shutter_prevBtn.png) no-repeat 0 -49px;
+        }
         .shutter-btn li.next {
         right: 20px;
-        background: url(../image/shutter_nextBtn.png) no-repeat 0 -49px;
-    }
+        background: url(image/shutter_nextBtn.png) no-repeat 0 -49px;
+        }
         .shutter-desc {
         position: absolute;
         z-index: 2;
@@ -247,18 +245,19 @@
         width: 100%;
         height: 36px;
         background: url(../image/shutter_shadow.png) repeat;
-    }
+        }
         .shutter-desc p {
         padding-left: 20px;
         line-height: 36px;
         color: #fff;
         font-size: 14px;
-    }
+        }
         /* 轮播图-结束 */
     </style>
 </head>
 <body>
-    <div class="top clearfix">       
+    <div class="top clearfix">  
+        <div class="">     
         <div class="nav">
             <p class="top-title">LIFETRACKR</p>
             <p class="top-paragraph">Being Productive.<br>Manage Your Life Day to Day.</p>
@@ -267,13 +266,14 @@
             <button><img src="image/google.png" href="https://google.com.pe"></button>
         </div>
         <div class="leftpic"><img src="image/hand.png"></div>
+        </div>
     </div>
     <div class="clearfix">
         <div class="middletitle">
             <p class="middlepara">Useful Tools For Your Life</p>
             <p class="middlearticle">Our platform is used for help people to reach their success day by day</p>
         </div>
-        <div>
+        <div class="clearfix">
             <div class="middlepart">
                 <i class="iconfont icon-rili"></i>
                 <div class="middlepara">Daily Based</div>
@@ -347,35 +347,34 @@
         </div>
     </div>
     <div class="shutter">
-        <div class="shutter-img">
-          <img src="image/p1.png" alt="#">
-          <img src="image/p2.png" alt="#">
-          <img src="image/p3.png" alt="#">
-        </div>
-        <ul class="shutter-btn">
-          <li class="prev"></li>
-          <li class="next"></li>
-        </ul>
-        <div class="shutter-desc">
-        </div>
+            <div class="shutter-img">
+              <a href="#" data-shutter-title="Iron Man"><img src="image/p1.png" alt="#"></a>
+              <a href="#" data-shutter-title="Super Man"><img src="image/p2.png" alt="#"></a>
+              <a href="#" data-shutter-title="The Hulk"><img src="image/p3.png" alt="#"></a>
+            </div>
+            <ul class="shutter-btn">
+              <li class="prev"></li>
+              <li class="next"></li>
+            </ul>
+            <div class="shutter-desc">
+            </div>
     </div>
-
-
+            
     <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
-    <script src="js/velocity.js"></script>
-    <script src="js/shutter.js"></script>
+    <script src="script/velocity.js"></script>
+    <script src="script/shutter.js"></script>
     <script>
     $(function () {
-    $('.shutter').shutter({
-	    shutterW: 1440, 
-	    shutterH: 358, 
-	    isAutoPlay: true, 
-	    playInterval: 2000, 
-	    curDisplay: 2, 
-	    fullPage: false 
+      $('.shutter').shutter({
+        shutterW: 850, 
+        shutterH: 450, 
+        isAutoPlay: true, 
+        playInterval: 3000, 
+        curDisplay: 3, 
+        fullPage: false 
         });
     });
-</script>
+    </script>
 
 </body>
 </html>
