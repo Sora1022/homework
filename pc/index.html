@@ -16,15 +16,14 @@
         }
 
         .leftpic {
-            margin-top: 70px;
-            margin-left:150px;
+            margin-left:100px;
+            width: 400px;
+            height: 500px;
         }
 
         .nav {
-
-            
-            margin: 100px 300px 200px 50px;
             float: right;
+            right: 100px;
         }
 
         .top-title {
@@ -59,12 +58,16 @@
             border: none;
             background-color: transparent;
         }
+
+        .top-box {
+            width: 1000px;
+            margin: 0 auto;
+        }
         /* 头部结束 */
 
         .middletitle {
             margin-top: 80px;
             margin-bottom: 80px;
-            margin-left: -80px;
             text-align: center;
         }
 
@@ -96,31 +99,16 @@
             z-index:50;
         }
 
-        .left-phone {
-            position:absolute;
-            margin-top: 150px;
-            margin-left: 350px;
-            z-index:90;
-        }
-
-        .right-phone {
-            position:absolute;
-            margin-top: 150px;
-            margin-left: 800px;
-            z-index:90;
-        }
-
         .middle-phone {
-            position:absolute;
-            margin-top: 100px;
-            margin-left: 550px;
-            z-index:100;
+            width: 680px;
+            display: block;
+            margin: 0 auto;       
         }
         /*中间部分结束*/
 
         .middle-paragraph {
             width: 100%;
-            margin-top: 350px;
+            margin-top: 200px;
         }
 
         .middle-paragraph p {
@@ -257,7 +245,7 @@
 </head>
 <body>
     <div class="top clearfix">  
-        <div class="">     
+        <div class="top-box clearfix">     
         <div class="nav">
             <p class="top-title">LIFETRACKR</p>
             <p class="top-paragraph">Being Productive.<br>Manage Your Life Day to Day.</p>
@@ -296,9 +284,7 @@
     </div>
     <div class="clearfix">
         <div class="middle-bgp">
-            <div><img src="image/middle.png" class="middle-phone"></div>
-            <div><img src="image/left.png" class="left-phone"></div>
-            <div><img src="image/right.png" class="right-phone"></div>  
+            <div class="middle-phone"><img src="image/phone.png"></div>
         </div>
         <div class="middle-paragraph">
             <div class="middle-title">
