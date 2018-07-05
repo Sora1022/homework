@@ -16,6 +16,7 @@
         }
 
         .leftpic {
+            float: left;
             margin-left:100px;
             width: 400px;
             height: 500px;
@@ -23,7 +24,6 @@
 
         .nav {
             float: right;
-            right: 100px;
         }
 
         .top-title {
@@ -241,6 +241,101 @@
         font-size: 14px;
         }
         /* 轮播图-结束 */
+
+        /* 团队介绍-开始 */
+        .bottom-title {
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .bottom-list {
+            float: left;
+            width: 33.3%;
+        }s
+
+        .bottom-icon {
+            float: left;
+            width: 100px;
+            height: 100px;
+            border-radius: 90%;
+        }
+        /* 团队介绍-结束 */
+
+        /* 页脚-开始 */
+        .foot-button {
+            float: left;
+        }
+
+        .foot-list {
+            float: left;
+            margin-left: 20px;
+            font-size: 15px;
+            color: gray;
+        }
+
+
+        .foot-border {
+            width: 100%;
+            margin-top: 50px;
+            padding: 30px 50px;
+            border-top: 1px solid grey;
+        }
+
+        .foot-special {
+            margin-top: 40px;
+        }
+
+        .foot-nav {
+            width: 40%;
+            margin: 0 auto;
+        }
+
+        .foot-para {
+            color: gray;
+        }
+
+        .foot-icon {
+            float: left;
+        }
+        .foot-share {
+            float: right;
+            margin-right: 50px;
+        }
+
+        .col1 {
+            width:30px;
+            height: 30px;
+            border-radius: 90%;
+            background-color: #29c5f6;
+        }
+        .col2 {
+            width:30px;
+            height: 30px;
+            border-radius: 90%;
+            background-color: #6788ce;
+        }
+        .col3 {
+            width:30px;
+            height: 30px;
+            border-radius: 90%;
+            background-color: #f85993;
+        }
+        .col4 {
+            width:30px;
+            height: 30px;
+            border-radius: 90%;
+            background-color: #4582ca;
+        }
+
+        .foot-title {
+            font-family: OpenSans CondensedBold;
+            font-weight: bold;
+            font-stretch: ultra-condensed;
+            font-size: 20px;
+            color:lightgray;
+        }
+        /* 页脚-结束 */
     </style>
 </head>
 <body>
@@ -344,6 +439,62 @@
             </ul>
             <div class="shutter-desc">
             </div>
+    </div>
+    <div>
+        <div class="bottom-title">
+            <p class="middlepara">Our Happy Team</p>
+            <p class="foot-para">Here is the people behind this great app</p>
+        </div>
+        <div class="foot-special clearfix">
+            <div class="bottom-list clearfix">
+                <img src="image/man.png" class="bottom-icon">
+                <div>
+                    <p>Matthew Graham</p>
+                    <p class="foot-para">Co-Founder/CEO</p>
+                    <div class="clearfix">
+                        <img src="image/twitter.png" class="col1">
+                        <img src="image/facebook.png" class="col2">
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-list clearfix">
+                <img src="image/man.png" class="bottom-icon">            
+                <div>
+                    <p>Denise Zwarovski</p>
+                    <p class="foot-para">Co-Founder/Designer</p>   
+                    <div class="clearfix">
+                        <img src="image/twitter.png" class="col1">
+                        <img src="image/dribbble.png" class="col3">
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-list clearfix">
+                <img src="image/man.png" class="bottom-icon">
+                <div>
+                    <p>Keith Evans</p>
+                    <p class="foot-para">Programmer</p>
+                    <div class="clearfix">
+                        <img src="image/twitter.png" class="col1">
+                        <img src="image/github.png" class="col4">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="foot-border clearfix">
+            <div>
+                <p class="foot-button foot-title">Lifetrackr.</p>
+            </div>
+            <div class="foot-nav clearfix">
+                <p class="foot-list">Download</p>
+                <p class="foot-list">Support</p>
+                <p class="foot-list">Developers</p>
+                <p class="foot-list">Privacy</p>
+            </div>
+            <div class="foot-button foot-share">
+                <img src="image/twitter copy.png">
+                <img src="image/facebook copy.png">
+            </div>
+        </div>
     </div>
             
     <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
